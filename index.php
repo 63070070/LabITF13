@@ -33,7 +33,7 @@ while($Result = mysqli_fetch_array($res))
         <button type="button" class="btn btn-outline-danger">ลบ</button></td>
     
   </tr>
-    <tr><button type="button" class="btn btn-outline-warning">แก้ไข</button></tr>
+    <tr><button type="button" class="btn btn-outline-success">เพิ่ม</button></tr>
 <?php
 }
 ?>
