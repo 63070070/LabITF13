@@ -37,7 +37,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-<tr><button type="button" class="btn btn-outline-success" onclick="location.href='form.html'">เพิ่ม</button></tr>
+<tr><button type="button" class="btn btn-outline-success" onclick="location.href='form_add.html'">เพิ่ม</button></tr>
 <?php
 mysqli_close($conn);
 ?>
