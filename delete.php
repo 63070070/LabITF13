@@ -11,7 +11,7 @@ if (mysqli_connect_errno($conn))
 $id=$_REQUEST['id'];
 $query = "DELETE FROM new_record WHERE id=$id"; 
 $result = mysqli_query($con,$query) or die ( mysqli_error());
-header("Location: view.php"); 
+header("Location: index.php"); 
   
 mysqli_close($conn);
 ?>
