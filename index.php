@@ -26,12 +26,12 @@ while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
+      <form action = "delete.php">
     <td class="text-success"><?php echo $Result['Name'];?></div></td>
     <td class="text-success"><?php echo $Result['Comment'];?></td>
     <td class="text-success"><?php echo $Result['Link'];?></td>
     <td><button type="button" class="btn btn-outline-warning" onclick="location.href='form.html'">แก้ไข</button>
         <input type="submit" id="commentBtn" class="btn btn-outline-danger" value="ลบ">
-        <form action = "delete.php">
     </td>
   </tr>
 <?php
