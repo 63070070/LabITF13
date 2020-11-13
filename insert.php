@@ -21,6 +21,7 @@ if (mysqli_query($conn, $sql)) {
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
-  header('location: index.php');
 mysqli_close($conn);
+{header('location: index.php');
+}
 ?>
