@@ -8,16 +8,15 @@ if (mysqli_connect_errno($conn))
 }
 
 
-$name = $_POST['Name'];
-$comment = $_POST['Comment'];
-$link = $_POST['Link'];
+$id = $_GET["ID"]
 
 
-$sql = "DELETE INTO guestbook (Name , Comment , Link)";
+$sql = "DELETE FROM guestbook WHERE ID = '$id'";
 
 
 if (mysqli_query($conn, $sql)) {
-    echo "Delete created successfully";
+    echo "Delete successfully"
+    header('location:index.php');
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
