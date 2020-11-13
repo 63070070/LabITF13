@@ -9,7 +9,7 @@
   <form action = "delete.php" method = "post" id="CommentForm" >
     Name:<br>
     <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
-    <input type="submit" id="commentBtn" class="btn btn-warning" value="Delete">
+    <input type="submit" id="commentBtn" class="btn btn-danger" value="Delete">
   </form> 
 </body>
 </html>
