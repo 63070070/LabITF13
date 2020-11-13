@@ -29,8 +29,8 @@ while($Result = mysqli_fetch_array($res))
     <td class="text-success"><?php echo $Result['Name'];?></div></td>
     <td class="text-success"><?php echo $Result['Comment'];?></td>
     <td class="text-success"><?php echo $Result['Link'];?></td>
-    <td><input type="submit" id="commentBtn" class="btn btn-success" align="center">แก้ไข</input>
-    <input type="submit" id="commentBtn" class="btn btn-success" align="center">ลบ</input></td>
+    <td><button type="button" class="btn btn-outline-warning">แก้ไข</button>
+        <button type="button" class="btn btn-outline-danger">ลบ/button></td>
   </tr>
 <?php
 }
