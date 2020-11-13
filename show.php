@@ -14,7 +14,7 @@ if (mysqli_connect_errno($conn))
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
 <table width="1000" border="1">
-    <tr class="thead-dark">
+    <tr class="table-primary">
     <th width="100"> <div align="center">Name</div></th>
     <th width="350"> <div align="center">Comment </div></th>
     <th width="150"> <div align="center">Link </div></th>
