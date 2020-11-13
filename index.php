@@ -33,11 +33,11 @@ while($Result = mysqli_fetch_array($res))
         <button type="button" class="btn btn-outline-danger">ลบ</button></td>
     
   </tr>
-    <tr><button type="button" class="btn btn-outline-success">เพิ่ม</button></tr>
 <?php
 }
 ?>
 </table>
+<tr><button type="button" class="btn btn-outline-success" align="center">เพิ่ม</button></tr>
 <?php
 mysqli_close($conn);
 ?>
