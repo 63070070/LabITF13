@@ -31,7 +31,9 @@ while($Result = mysqli_fetch_array($res))
     <td class="text-success"><?php echo $Result['Link'];?></td>
     <td><button type="button" class="btn btn-outline-warning">แก้ไข</button>
         <button type="button" class="btn btn-outline-danger">ลบ</button></td>
+    
   </tr>
+    <tr><button type="button" class="btn btn-outline-warning">แก้ไข</button></tr>
 <?php
 }
 ?>
