@@ -13,7 +13,7 @@
     <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter comment"></textarea><br> 
     Link:<br>
     <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
-    <input type="submit" id="commentBtn" class="btn btn-warning" value="Add">
+    <input type="submit" id="commentBtn" class="btn btn-warning" value="Update">
   </form> 
 </body>
 </html>
