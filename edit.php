@@ -1,11 +1,12 @@
 <?php
+$id=$_GET['ID'];
 
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'labitf-13.mysql.database.azure.com', 'it63070070@labitf-13', 'MESjmr18', 'itflab', 3306);
 
 
 
-$id=$_GET['ID'];
+
 $name = $_POST['name'];
 $comment = $_POST['comment'];
 $link = $_POST['link'];
