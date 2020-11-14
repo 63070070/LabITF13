@@ -11,10 +11,6 @@ if (mysqli_connect_errno($conn))
 }
 ?>
 
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<meta charset="utf-8">
-
 <div class="container" style="width:600px;margin-top:50px;">
   <form action = "edit.php?ID=<?php echo $row['ID']; ?>" method = "post" id="CommentForm" class="form-group">
     Name:<br>
