@@ -6,14 +6,17 @@
 	<meta charset="utf-8">
 </head>
 <body>
-  <form action = "insert.php" method = "post" id="CommentForm" >
-    Name:<br>
-    <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
-    Comment:<br>
-    <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter comment"></textarea><br> 
-    Link:<br>
-    <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
-    <input type="submit" id="commentBtn" class="btn btn-success" value="Add">
-  </form> 
+	<div class="container">
+		<div class="col-12 col-md-auto">
+  		<form action = "insert.php" method = "post" id="CommentForm" >
+    		Name:<br>
+    		<input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
+    		Comment:<br>
+    		<textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter comment"></textarea><br> 
+    		Link:<br>
+    		<input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
+    		<input type="submit" id="commentBtn" class="btn btn-success" value="Add">
+		</form>
+	</div>
 </body>
 </html>
