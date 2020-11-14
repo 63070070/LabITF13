@@ -30,8 +30,7 @@ while($Result = mysqli_fetch_array($res))
     <td class="text-success"><?php echo $Result['Comment'];?></td>
     <td class="text-success"><?php echo $Result['Link'];?></td>
     <td><button type="button" class="btn btn-outline-warning" onclick="location.href='form.html'">แก้ไข</button>
-        <a href="delete.php?ID=<?php echo $Result['ID']?>" class="btn btn-outline-danger"onclick="return confirm('Confirm data deletion?')">ลบ</a>
-        <button type="button" class="btn btn-outline-danger" onclick="location.href="delete.php?ID=<?php echo $Result["ID"]; ?>"">ลบ</button>
+        <a href="delete.php?ID=<?php echo $Result['ID']?>" class="btn btn-outline-danger"onclick="return confirm('Confirm delete ?')">ลบ</a>
     </td>
   </tr>
 <?php
