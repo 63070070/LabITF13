@@ -31,6 +31,8 @@ while($Result = mysqli_fetch_array($res))
     <td class="text-success"><?php echo $Result['Link'];?></td>
     <td><button type="button" class="btn btn-outline-warning" onclick="location.href='form.html'">แก้ไข</button>
         <button type="button" class="btn btn-outline-danger" onclick="location.href="delete.php"">ลบ</button>
+        <form action="vote.php">
+        <input type="button" id="commentBtn" class="btn btn-outline-danger" value="ลบ" value="<?php echo $id; ?>">
     </td>
   </tr>
 <?php
