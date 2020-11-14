@@ -15,8 +15,8 @@ $row = mysqli_fetch_array($res)
 ?>
  
 <div class="container">
-    <div class="col-12">
-    <div class="row-6">
+    <div class="col-12 col-md-auto">
+    <div class="row justify-content-md-center">
     <form action = "edit.php?ID=<?php echo $row['ID']; ?>" method = "post" id="CommentForm" class="form-group">
         Name:<br>
         <input type="text" name = "name" id="idName" value="<?php echo "$row[Name]"; ?>"> <br>
