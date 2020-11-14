@@ -1,7 +1,12 @@
 <?php
     	$id=$_GET['ID'];
-	$sql="SELECT * FROM menu WHERE ID='$id'";
-	$row=mysqli_fetch_array($result);
+	$conn = mysqli_init();
+mysqli_real_connect($conn, 'labitf-13.mysql.database.azure.com', 'it63070070@labitf-13', 'MESjmr18', 'itflab', 3306);
+if (mysqli_connect_errno($conn))
+{
+    die('Failed to connect to MySQL: '.mysqli_connect_error());
+}
+	$Result=mysqli_fetch_array($id);
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,7 +17,7 @@
 </head>
 <body>
 
-  <form action = "edit.php?ID=<?php echo $row['ID']?>" method = "post" id="CommentForm" >
+  <form action = "edit.php?ID=<?php echo $Result['ID']?>" method = "post" id="CommentForm" >
     Name:<br>
     <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
     Comment:<br>
