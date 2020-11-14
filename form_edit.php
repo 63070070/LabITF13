@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+    	$id=$_GET['ID']
+	$sql="SELECT * FROM menu WHERE ID='$id'";
+	$result=$con->query($sql);
+	$row=mysqli_fetch_array($result);
+?>
 <html>
 <head>
 	<title>Update Form</title>
@@ -6,12 +11,7 @@
 	<meta charset="utf-8">
 </head>
 <body>
-<?php
-    	$id=$_GET['ID']
-	$sql="SELECT * FROM menu WHERE ID='$id'";
-	$result=$con->query($sql);
-	$row=mysqli_fetch_array($result);
-?>
+
   <form action = "edit.php?ID=<?php echo $row['ID']?>" method = "post" id="CommentForm" >
     Name:<br>
     <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
