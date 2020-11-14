@@ -9,7 +9,6 @@ if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
-	$Result=mysqli_fetch_array($conn);
 ?>
 
 <html>
