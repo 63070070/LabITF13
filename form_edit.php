@@ -4,6 +4,7 @@
 	$result=$con->query($sql);
 	$row=mysqli_fetch_array($result);
 ?>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Update Form</title>
