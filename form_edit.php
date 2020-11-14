@@ -11,7 +11,7 @@ if (mysqli_connect_errno($conn))
 }
 	$Result=mysqli_fetch_array($conn);
 ?>
-<!DOCTYPE html>
+
 <html>
 <head>
 	<title>Update Form</title>
