@@ -8,7 +8,7 @@ if (mysqli_connect_errno($conn))
 }
 
 
-$id=$_GET['ID'];
+$id=$_POST['ID'];
 $name = $_POST['name'];
 $comment = $_POST['comment'];
 $link = $_POST['link'];
