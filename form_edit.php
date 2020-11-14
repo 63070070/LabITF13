@@ -14,15 +14,16 @@ $row = mysqli_fetch_array($res)
 
 ?>
  
-<div class="container" style="width:600px;margin-top:50px;">
-  <form action = "edit.php?ID=<?php echo $row['ID']; ?>" method = "post" id="CommentForm" class="form-group">
-    Name:<br>
-    <input type="text" name = "name" id="idName" value="<?php echo "$row[Name]"; ?>"> <br>
-    Comment:<br>
-    <input type="text" rows="10" cols="20" name = "comment" id="idComment" value="<?php echo "$row[Comment]"; ?>"> <br>
-    Link:<br>
-    <input type="text" name = "link" id="idLink" value="<?php echo "$row[Link]"; ?>"> <br><br>
-    <input type="submit" id="commentBtn"class="btn btn-outline-warning">
-  </form> 
- </body>
- </html>
+<div class="container">
+    <div class="col-6">
+    <form action = "edit.php?ID=<?php echo $row['ID']; ?>" method = "post" id="CommentForm" class="form-group">
+        Name:<br>
+        <input type="text" name = "name" id="idName" value="<?php echo "$row[Name]"; ?>"> <br>
+        Comment:<br>
+        <input type="text" rows="10" cols="20" name = "comment" id="idComment" value="<?php echo "$row[Comment]"; ?>"> <br>
+        Link:<br>
+        <input type="text" name = "link" id="idLink" value="<?php echo "$row[Link]"; ?>"> <br><br>
+        <input type="submit" id="commentBtn"class="btn btn-outline-warning">
+    </form> 
+</body>
+</html>
