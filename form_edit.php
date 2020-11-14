@@ -6,7 +6,7 @@ if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
-	$Result=mysqli_fetch_array($id);
+	$Result=mysqli_fetch_array($conn);
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,7 +17,7 @@ if (mysqli_connect_errno($conn))
 </head>
 <body>
 
-  <form action = "edit.php?ID=<?php echo '$id';?>" method = "post" id="CommentForm" >
+  <form action = "edit.php?ID=<?php echo $id?>" method = "post" id="CommentForm" >
     Name:<br>
     <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
     Comment:<br>
