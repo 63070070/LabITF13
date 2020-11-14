@@ -1,3 +1,10 @@
+<html>
+<head>
+    <title>Update Form</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="utf-8">
+</head>
+<body>
 <?php
 $id=$_GET['ID'];
 $conn = mysqli_init();
@@ -17,3 +24,5 @@ $row = mysqli_fetch_array($res)
     <input type="text" name = "link" id="idLink" value="<?php echo "$row[Link]"; ?>"> <br><br>
     <input type="submit" id="commentBtn"class="btn btn-outline-warning">
   </form> 
+ </body>
+ </html>
