@@ -8,10 +8,13 @@ if (mysqli_connect_errno($conn))
 }
 
 
-$id=$_REQUEST['id'];
-$query = "DELETE FROM new_record WHERE id=$id"; 
-$result = mysqli_query($con,$query) or die ( mysqli_error());
-header("Location: index.php"); 
+$id=$_GET['ID'];
+$sql = "DELETE FROM guestbook WHERE ID=$id"; 
+if (mysqli_query($conn, $sql)) {
+    header("Location: index.php"); 
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
   
 mysqli_close($conn);
 ?>
