@@ -1,7 +1,6 @@
 <?php
     	$id=$_GET['ID'];
 	$sql="SELECT * FROM menu WHERE ID='$id'";
-	$result=$con->query($sql);
 	$row=mysqli_fetch_array($result);
 ?>
 <!DOCTYPE html>
