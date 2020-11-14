@@ -5,10 +5,6 @@ mysqli_real_connect($conn, 'labitf-13.mysql.database.azure.com', 'it63070070@lab
 $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE ID='$id'");
 $row = mysqli_fetch_array($res)
 
-if (mysqli_connect_errno($conn))
-{
-    die('Failed to connect to MySQL: '.mysqli_connect_error());
-}
 ?>
  
 <div class="container" style="width:600px;margin-top:50px;">
