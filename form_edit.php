@@ -14,7 +14,7 @@ $row = mysqli_fetch_array($res)
 
 ?>
  
-<div class="container-md">
+<div class="container-fluid">
     
         <form action = "edit.php?ID=<?php echo $row['ID']; ?>" method = "post" id="CommentForm" class="form-group">
             Name:<br>
