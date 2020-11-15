@@ -15,7 +15,7 @@ $row = mysqli_fetch_array($res)
 ?>
  
 <div class="container">
-    <div class="col-12 col-md-auto">
+    
         <form action = "edit.php?ID=<?php echo $row['ID']; ?>" method = "post" id="CommentForm" class="form-group">
             Name:<br>
             <input type="text" name = "name" id="idName" value="<?php echo "$row[Name]"; ?>"> <br>
@@ -25,7 +25,7 @@ $row = mysqli_fetch_array($res)
             <input type="text" name = "link" id="idLink" value="<?php echo "$row[Link]"; ?>"> <br><br>
             <input type="submit" id="commentBtn"class="btn btn-outline-warning">
         </form> 
-    </div>
+    
 </div>
 </body>
 </html>
