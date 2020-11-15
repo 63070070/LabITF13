@@ -23,7 +23,7 @@ $row = mysqli_fetch_array($res)
             <input type="text" name = "comment" id="idComment" value="<?php echo "$row[Comment]"; ?>"> <br>
             Link:<br>
             <input type="text" name = "link" id="idLink" value="<?php echo "$row[Link]"; ?>"> <br><br>
-            <input type="submit" id="commentBtn"class="btn btn-outline-warning">
+            <input type="submit" id="commentBtn"class="btn btn-outline-warning" value="Update">
         </form> 
     
 </div>
